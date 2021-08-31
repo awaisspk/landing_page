@@ -19,11 +19,11 @@ export const stitchesConfig = createStitches({
       primary: '$white',
       secondary: '$black',
       tertiary: '$neutral400',
-      accent: '$neutral100'
+      accent: '$neutral100',
     },
     fonts: {
       body: 'Inter, apple-system, Verdana, sans-serif',
-      heading: 'Poppins, apple-system, Verdana, sans-serif'
+      heading: 'Poppins, apple-system, Verdana, sans-serif',
     },
     space: {
       1: '4px',
@@ -33,23 +33,23 @@ export const stitchesConfig = createStitches({
       5: '64px',
       6: '128px',
       7: '256px',
-      8: '512px'
+      8: '512px',
     },
     radii: {
       xs: '2px',
       sm: '4px',
       md: '8px',
       lg: '16px',
-      full: '9999px'
+      full: '9999px',
     },
     media: {
       dark: '(prefers-color-scheme: dark)',
       bp1: '(min-width: 375px)',
       bp2: '(min-width: 768px)',
       bp3: '(min-width: 1024px)',
-      bp4: '(min-width: 1440px)'
-    }
-  }
+      bp4: '(min-width: 1440px)',
+    },
+  },
 })
 
 export const darkTheme = stitchesConfig.createTheme({
@@ -57,8 +57,8 @@ export const darkTheme = stitchesConfig.createTheme({
     primary: '$black',
     secondary: '$white',
     tertiary: '$neutral300',
-    accent: '$neutral500'
-  }
+    accent: '$neutral500',
+  },
 })
 
 export const globalStyles = stitchesConfig.globalCss('dark-theme', {
@@ -66,11 +66,11 @@ export const globalStyles = stitchesConfig.globalCss('dark-theme', {
     background: '$primary',
     color: '$secondary',
     fontFamily: '$body',
-    margin: 0
+    margin: 0,
   },
   svg: {
     display: 'inline-block',
-    verticalAlign: 'middle'
+    verticalAlign: 'middle',
   },
   '@dark': {
     // notice the `media` definition on the stitches.config.ts file
@@ -84,10 +84,10 @@ export const globalStyles = stitchesConfig.globalCss('dark-theme', {
 
         return {
           [currentColor.variable]: currentColorValue,
-          ...varSet
+          ...varSet,
         }
-      }, {})
-    }
+      }, {}),
+    },
   },
 
   '@font-face': {
@@ -96,7 +96,7 @@ export const globalStyles = stitchesConfig.globalCss('dark-theme', {
     fontWeight: '400 600 ',
     fontDisplay: 'optional',
     src: 'local("Inter") url(/fonts/inter-var-latin.woff2) format("woff2")',
-    unicodeRange: `U+000-5FF`
+    unicodeRange: `U+000-5FF`,
   },
   '@font-face': {
     fontFamily: 'Poppins',
@@ -104,8 +104,8 @@ export const globalStyles = stitchesConfig.globalCss('dark-theme', {
     fontWeight: 600,
     fontDisplay: 'optional',
     src: 'local("Poppins") url(/fonts/poppins-v15-latin-600.woff) format("woff") url(/fonts/poppins-v15-latin-600.woff2) format("woff2")',
-    unicodeRange: `U+000-5FF`
-  }
+    unicodeRange: `U+000-5FF`,
+  },
 })
 
 globalStyles()

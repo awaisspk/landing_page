@@ -6,42 +6,42 @@ import Youtube from '@/components/icons/youtube'
 
 export const github = {
   icon: <Github />,
-  href: 'https://github.com/gregogun',
+  href: 'https://github.com/awaisspk',
   name: 'github',
-  color: null
+  color: null,
 }
 
 export const linkedin = {
   icon: <Linkedin />,
-  href: 'https://www.linkedin.com/in/greg-ogun/',
+  href: '',
   name: 'linkedin',
-  color: '#0A66C2'
+  color: '#0A66C2',
 }
 
 export const twitter = {
   icon: <Twitter />,
-  href: 'https://twitter.com/gregogun',
+  href: '',
   name: 'twitter',
-  color: '#1DA1F2'
+  color: '#1DA1F2',
 }
 
 export const twitch = {
   icon: <Twitch />,
-  href: 'https://www.twitch.tv/gregogun',
+  href: '',
   name: 'twitch',
-  color: '#9146FF'
+  color: '#9146FF',
 }
 
 export const youtube = {
   icon: <Youtube />,
-  href: 'https://www.youtube.com/channel/UCQDUHOvgodaEqjHm9Ihn87w',
+  href: '',
   name: 'youtube',
-  color: '#FF0000'
+  color: '#FF0000',
 }
 
 export const discord = {
   icon: null,
-  href: 'https://discord.gg/NHCkzptb',
+  href: '',
   name: 'discord',
-  color: '#5865F2'
+  color: '#5865F2',
 }

@@ -9,8 +9,8 @@ const toggleButton = css({
   border: '0',
   cursor: 'pointer',
   '&:hover': {
-    backgroundColor: 'accent'
-  }
+    backgroundColor: 'accent',
+  },
 })
 
 export const ThemeToggle = ({ children }) => {
@@ -18,7 +18,6 @@ export const ThemeToggle = ({ children }) => {
   const toggleTheme = () => {
     theme === 'dark' ? setTheme('light') : setTheme('dark')
   }
-
   return (
     <button className={toggleButton()} onClick={toggleTheme}>
       {children}

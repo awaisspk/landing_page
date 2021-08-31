@@ -13,7 +13,7 @@ const Container = styled('div', {
   boxSizing: 'border-box',
   width: '100%',
   maxWidth: '768px',
-  margin: 'auto'
+  margin: 'auto',
 })
 
 const Navbar = styled('div', {
@@ -23,11 +23,11 @@ const Navbar = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  marginBottom: '64px'
+  marginBottom: '64px',
 })
 
 const ListItem = styled('li', {
-  listStyle: 'none'
+  listStyle: 'none',
 })
 
 const List = styled('ul', {
@@ -38,7 +38,7 @@ const List = styled('ul', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'space-between',
-  width: '248px'
+  width: '248px',
 })
 
 const Link = ({ children, href, isExternal = false }) => {
@@ -108,10 +108,10 @@ export default function Home() {
         className={text({
           css: {
             fontFamily: '$heading',
-            marginBottom: '40px'
+            marginBottom: '40px',
           },
           size: '4xl',
-          weight: 'semibold'
+          weight: 'semibold',
         })}
       >
         Awais Iqbal
@@ -121,9 +121,9 @@ export default function Home() {
           css: {
             marginBottom: '4px',
             color: '$tertiary',
-            fontStyle: 'italic'
+            fontStyle: 'italic',
           },
-          size: 'md'
+          size: 'md',
         })}
       >
         noun
@@ -131,11 +131,11 @@ export default function Home() {
       <p
         className={text({
           css: {
-            marginBottom: '32px'
+            marginBottom: '32px',
             // color: '$secondary'
           },
           weight: 'semibold',
-          size: 'xl'
+          size: 'xl',
         })}
       >
         developer, designer, writer, and big time tea drinker.
@@ -143,8 +143,8 @@ export default function Home() {
       <p
         className={text({
           css: {
-            marginBottom: '32px'
-          }
+            marginBottom: '32px',
+          },
         })}
       >
         welcome to my internet home.
@@ -152,11 +152,11 @@ export default function Home() {
       <p
         className={text({
           css: {
-            marginBottom: '64px'
-          }
+            marginBottom: '64px',
+          },
         })}
       >
-        whilst you're here, feel free to sign my digital guestbook.
+        whilst you are here, feel free to sign my digital guestbook.
       </p>
       <Socials />
     </Container>
