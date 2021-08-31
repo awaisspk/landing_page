@@ -8,6 +8,7 @@ import Twitter from '@/components/icons/twitter'
 import Youtube from '@/components/icons/youtube'
 import Twitch from '@/components/icons/twitch'
 import { github, linkedin, twitter, twitch, youtube } from 'data/socials'
+import { LightDarkSwitcher } from '@/components/Button/LightDarkSwitcher'
 
 const Container = styled('div', {
   boxSizing: 'border-box',
@@ -50,11 +51,7 @@ const Link = ({ children, href, isExternal = false }) => {
 }
 
 const ThemeToggleButton = () => {
-  return (
-    <ThemeToggle>
-      <Sun size="24px" />
-    </ThemeToggle>
-  )
+  return <LightDarkSwitcher />
 }
 
 const Socials = () => {

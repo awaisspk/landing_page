@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/colors": "^0.1.7",
     "@stitches/react": "^1.0.0-canary.18",
     "framer-motion": "^4.1.17",
     "next": "11.1.0",

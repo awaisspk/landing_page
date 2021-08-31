@@ -1,4 +1,5 @@
 import { createStitches, createTheme } from '@stitches/react'
+import { gray, grayDark } from '@radix-ui/colors'
 
 export const stitchesConfig = createStitches({
   theme: {
@@ -13,6 +14,7 @@ export const stitchesConfig = createStitches({
       neutral300: '#8f8f8f',
       neutral400: '#555555',
       neutral500: '#2f2f2f',
+      ...gray,
 
       //semantic tokens
 
@@ -41,6 +43,9 @@ export const stitchesConfig = createStitches({
       md: '8px',
       lg: '16px',
       full: '9999px',
+      small: '0.25em',
+      medium: '0.5em',
+      large: '1em',
     },
     media: {
       dark: '(prefers-color-scheme: dark)',
@@ -54,6 +59,7 @@ export const stitchesConfig = createStitches({
 
 export const darkTheme = stitchesConfig.createTheme({
   colors: {
+    ...grayDark,
     primary: '$black',
     secondary: '$white',
     tertiary: '$neutral300',
