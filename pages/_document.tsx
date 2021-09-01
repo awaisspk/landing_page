@@ -1,15 +1,39 @@
 import React from 'react'
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
+import NextDocument, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+} from 'next/document'
 import { getCssText } from '../stitches.config'
 
 export default class Document extends NextDocument {
+  static async getInitialProps(ctx: DocumentContext) {
+    const initialProps = await NextDocument.getInitialProps(ctx)
+
+    return {
+      ...initialProps,
+      styles: (
+        <>
+          {initialProps.styles}
+          <style
+            id="stitches"
+            dangerouslySetInnerHTML={{ __html: getCssText() }}
+          />
+        </>
+      ),
+    }
+  }
+
   render() {
+    const setInitialTheme = `function getTheme(){var e=window.localStorage.getItem("--dark-theme");if("system"!==e)return e}var theme=getTheme();theme&&(document.documentElement.dataset.theme=theme);`
     return (
       <Html lang="en">
         <Head>
           <style
             id="stitches"
-            dangerouslySetInnerHTML={{ __html: getCssText() }}
+            dangerouslySetInnerHTML={{ __html: setInitialTheme }}
           />
 
           <link

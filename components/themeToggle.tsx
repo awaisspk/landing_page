@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes'
-import { css } from 'stitches.config'
+import { css, styled } from 'stitches.config'
 
 const toggleButton = css({
   borderRadius: '4px',
