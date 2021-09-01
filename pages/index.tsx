@@ -9,6 +9,7 @@ import Youtube from '@/components/icons/youtube'
 import Twitch from '@/components/icons/twitch'
 import { github, linkedin, twitter, twitch, youtube } from 'data/socials'
 import { LightDarkSwitcher } from '@/components/Button/LightDarkSwitcher'
+import NextLink from 'next/link'
 
 const Container = styled('div', {
   boxSizing: 'border-box',
@@ -63,9 +64,9 @@ const Socials = () => {
         </Link>
       </ListItem>
       <ListItem>
-        <Link href={linkedin.href} isExternal>
+        <NextLink href="/about">
           <Linkedin width="24px" />
-        </Link>
+        </NextLink>
       </ListItem>
       <ListItem>
         <Link href={twitter.href} isExternal>
