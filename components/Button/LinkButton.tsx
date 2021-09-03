@@ -25,11 +25,11 @@ const LinkButton = styled(motion.button, {
   },
   '&:focus-visible': {
     outline: '2px solid $blue5',
-    backgroundColor: '$gray8',
+    backgroundColor: '$gray3',
     boxShadow: '0 0px 10px -6px rgba(0, 24, 40, 0.3)',
   },
   '&:hover': {
-    backgroundColor: '$gray8',
+    backgroundColor: '$gray4',
     boxShadow: '0 0px 15px -6px rgba(0, 24, 40, 0.4)',
   },
 })

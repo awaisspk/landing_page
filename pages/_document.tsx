@@ -51,7 +51,7 @@ export default class Document extends NextDocument {
             crossOrigin="anonymous"
           />
         </Head>
-        <body>
+        <body style={{ transition: 'backgroundColor 1s ease' }}>
           <Main />
           <NextScript />
         </body>
